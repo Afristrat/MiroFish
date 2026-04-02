@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+    allowedHosts: ['prospectives.ai-mpower.com'],  // ← ajouter cette ligne
     proxy: {
       '/api': {
         target: 'http://localhost:5001',
